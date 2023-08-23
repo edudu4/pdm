@@ -1,5 +1,3 @@
-# pdm
-
 # Programação para Dispositivos Móveis
 
 Este repositório foi criado para submeter códigos da disciplina.
