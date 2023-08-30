@@ -14,11 +14,16 @@ const addTasks = (taskName) => {
 }
 
 function removeTask(taskId)  {
-    tarefaFiltrada = tasks.filter(tasks => (taskId) == tasks.id)
-    tasks.slice(tasks.indexOf(tarefaFiltrada))
+  for(var i = 0, j = tasks.length; i !== j; i++) {
+    if(tasks[i].id === taskId) break;
+  }
+  tasks.splice(i, 1)
 }
 
 
 addTasks({name:"Trabalhar", completed: true})
-console.log(removeTask(1))
+console.log(getTasks())
+
+removeTask(1);
+
 console.log(getTasks())
